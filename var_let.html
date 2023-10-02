@@ -11,8 +11,26 @@
         Existem 3 escopos: global, de função e de bloco.
         global - está disponivel para tudo
         de função - se declararmos uma variavel usando o var, dentro de uma função, ela estará disponivel dentro da função e dos blocos contidos dentro da função.
-        de bloco -
+        de bloco - variaveis criadas dentro do bloco, sofrem elevação global (desde que o bloco não esteja dentro de uma função), se o bloco estiver dentro da função ele vai elevar ao escopo da função.
         */
+
+        var serie = 'friens';// global
+
+
+        function x(){
+            var serie = 'Game of Thrones';
+            console.log('Função :'+serie);
+
+            if(true){
+                console.log('bloco dentro da função:'+serie);
+            }
+        }
+        x();
+
+        if(true){
+        console.log('Global :'+serie);
+            
+        }
     </script>
 </body>
 </html>
