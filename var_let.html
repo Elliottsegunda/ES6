@@ -14,6 +14,8 @@
         global - está disponivel para tudo
         de função - se declararmos uma variavel usando o var, dentro de uma função, ela estará disponivel dentro da função e dos blocos contidos dentro da função.
         de bloco - variaveis criadas dentro do bloco, sofrem elevação global e fica disponivel para tudo (desde que o bloco não esteja dentro de uma função), se o bloco estiver dentro da função ele vai elevar ao escopo da função.
+
+        O let preserva o escopo onde a variavel foi criada, evitando que ela sofra elevação
         */
 
         var serie = 'friens';// global
@@ -33,6 +35,17 @@
         console.log('Global :'+serie);
             
         }
+        document.write('<hr>');
+        document.write('Let');
+        document.write('<hr>');
+
+        if(true){
+            let serie2 = 'on my block';
+            console.log(serie2);
+        }
+        console.log(serie2);// erro,Undefined, porque não foi definido.
+
     </script>
+    
 </body>
 </html>
