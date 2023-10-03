@@ -9,10 +9,24 @@
     <script>
         /*
         Tamplate string é uma feacture do Es6 parecido a concanetação, com diferneça de que dentro de uma string ele abre pequenas janelas que serão processadas pelo jS e ai sim, o resultado disso é concatenada a string em questão.
+        ele aceita tambem quebras de linhas, ou seja, se dermos um enter no meio da string, teremos a nossa string formatada;
+        podemos interpolar qualquer tipo de expressoes, variaveis, funções e muitas outras
         */
        let nome = 'Elliott';
-       console.log('Oi '+nome+' Tudo bem?'); // forma habitual de concanetar strings
-       console.log(`Olá ${nome} tudo bem? `); // interpolação, usando o tamplate string
+       //console.log('Oi '+nome+' Tudo bem?'); // forma habitual de concanetar strings
+       //console.log(`Olá ${nome} tudo bem? `); // interpolação, usando o tamplate string.
+       /*console.log(`Olá 
+       ${nome} tudo bem?
+        `); // Quebra de linha.
+        */
+       console.log(`7+7 = ${7+7}`); // interpolação, usando o tamplate string.
+
+       function x(x,y){
+        return x*y;
+       }
+       console.log(`A multiolicação entre 8 e 4 = ${x(8,4)} `); // interpolação, usando o tamplate string.
+
+
     </script>
 </body>
 </html>
