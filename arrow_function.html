@@ -35,8 +35,27 @@
         */
         
        // atribuindo um parametro e usando return implicito
-            let quadrado = x => x*x
-            document.write(quadrado(4));
+            //let quadrado = x => x*x
+            //document.write(quadrado(5));
+
+        let parOuImpar = numero =>{
+            // muito complexa, não da para usar o return implicito, a menus que usassemos um operador ternario.
+            if((numero %2) === 0){
+                return 'Par'
+            }
+            else{
+                return 'impar'
+            }
+        }
+
+        /*
+        USANDO OPERADOR TERNARIO
+
+        let parOuImpar = numero => numero %2 === 0 ? 'Par' : 'Impar';
+        */
+
+        document.write(parOuImpar(7));
+
         
     </script>
 </body>
