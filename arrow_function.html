@@ -10,6 +10,12 @@
         /*
         É uma forma mais simplificada de escrever funções anonimas.
         */
+
+        //FUNÇÃO ANONIMA TRADICIONAL
+        let quadrado = function(x = 5){// definimos um parametro default para impedir que tente trabalhar com undefined, caso o parametro não seja encaminhado
+            return x*x
+        }
+        document.write(quadrado(3));
     </script>
 </body>
 </html>
