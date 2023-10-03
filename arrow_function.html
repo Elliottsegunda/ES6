@@ -20,12 +20,24 @@
 
         //FUNÇÃO ANONIMA arrow function
 
-        let quadrado = (x) =>{
+        /*let quadrado = (x) =>{
             return x*x
         }
         document.write(quadrado(4));
+        */
 
-        // se estivermos recebendo um unico parametro nem precisaremos meter o parametro entre parenteses, caso não estejamos recebendo ou mais é um, é obrigatorio usar parenteses para evitar erros de sintaxe.
+        // se estivermos recebendo um unico parametro nem precisaremos meter o parametro entre parenteses, caso não estejamos recebendo ou mais é um, é obrigatorio usar parenteses para evitar erros de sintaxe. e se tivermos apenas uma linha, que é o return, p+odemos fazer um return implicito
+
+        /*
+            let quadrado = x =>{
+            return x*x
+        }
+        */
+        
+       // atribuindo um parametro e usando return implicito
+            let quadrado = x => x*x
+            document.write(quadrado(4));
+        
     </script>
 </body>
 </html>
