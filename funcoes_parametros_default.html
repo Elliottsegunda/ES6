@@ -8,7 +8,14 @@
 <body>
     <script>
         /*
+        caso a função seja executada sem os parametros serem fornecidos, nos lugares dos parametros vai aparecer undefined, ou o script vai dar erro e morrer, para evitar isso, foi implementado no ES6 o recurso de parametro default, que serão usados caso a função não rebeca os valores dos parametros
+
         */
+       function contarUmaHistoria(persoangem, atividade, nome_dono){
+        document.write(`Era uma vez, um cachorrinho chamado ${personagem} adorava ${atividade} o seu dono era ${nome_dono} e viveram felizes para sempre`);
+       }
+
+       contarUmaHistoria();
     </script>
 </body>
 </html>
