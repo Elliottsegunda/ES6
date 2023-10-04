@@ -27,17 +27,17 @@
                 this.limite = 600;
             }
 
-            depositar()
+            depositar(valorDeposito)
             {
-
+                this.saldo +=valorDeposito;
             }
-            sacar()
+            sacar(valorSaque)
             {
-
+                this.saldo -= valorSaque;
             }
             consultarSaldo()
             {
-
+                return this.saldo;
             }
        }
     </script>
