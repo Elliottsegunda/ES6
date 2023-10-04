@@ -20,7 +20,7 @@
        // let cor = 'azul';
 
          //usando array
-
+        /*
          let cadeiras = Array();
         cadeiras[0] = Array();
         cadeiras[0]['qnt_pernas'] = 4;
@@ -53,7 +53,7 @@
         }
         adicionarCadeira(3, false, 'branca')
         console.log(cadeiras);
-
+        */
         //USANDO O PARADIGMA ORIENTADO A OBJECTOS
         class Cadeira{
             constructor(qnt_pernas,giratoria,cor){
@@ -65,9 +65,14 @@
             girarCadeira(){
                 if(this.giratoria === true){
                     console.log('girou');
+                }else{
+                    console.log('Não é giratoria');
                 }
             }
         }
+        let cadeira = new Cadeira(4,false,'azul');
+        let cadeira2 = new Cadeira(1,true,'verde');
+        cadeira.girarCadeira();
 
       
 
