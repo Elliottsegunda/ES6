@@ -51,7 +51,23 @@
             cadeiras.push(cadeira);
 
         }
-        console.log(girar_cadeira(1));
+        adicionarCadeira(3, false, 'branca')
+        console.log(cadeiras);
+
+        //USANDO O PARADIGMA ORIENTADO A OBJECTOS
+        class Cadeira{
+            constructor(qnt_pernas,giratoria,cor){
+                this.qnt_pernas = qnt_pernas;
+                this.giratoria = giratoria;
+                this.cor = cor;
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('girou');
+                }
+            }
+        }
 
       
 
