@@ -13,18 +13,36 @@
         */
 
         //procedural
-        let qnt_pernas = 4;
-        let giratoria = false;
-        let cor = 'azul';
 
-        function girar_cadeira(){
-            if(giratoria === true){
+        //cadeira
+       // let qnt_pernas = 4;
+      //  let giratoria = false;
+       // let cor = 'azul';
+
+         //usando array
+
+         let cadeiras = Array();
+        cadeiras[0] = Array();
+        cadeiras[0]['qnt_pernas'] = 4;
+        cadeiras[0]['giratoria'] = false;
+        cadeiras[0]['cor'] = 'Azul';
+
+        cadeiras[1] = Array();
+        cadeiras[1]['qnt_pernas'] = 1;
+        cadeiras[1]['giratoria'] = true;
+        cadeiras[1]['cor'] = 'vermelho';
+
+        function girar_cadeira(indice){
+            if(cadeiras[indice]['giratoria'] === true){
                 console.log(`É giratoria`);
             }else{
                 console.log(`Não é giratoria`);
 
             }
         }
+        console.log(girar_cadeira(1));
+
+      
 
     </script>
 </body>
