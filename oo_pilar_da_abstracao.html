@@ -13,6 +13,7 @@
         constructor - metodo automatico com as instruções que serão realizadas para se criar o objecto com base em um modelo
         this - contacta um atributo com o contexto do objecto
         new - cria uma instância que gera o objecto
+        . - nos permite acessar atributos e metodos dos objectos
 
         */
        class ContaBancaria{
@@ -44,6 +45,14 @@
 
        let x = new ContaBancaria(); // 2 objectos, baseados no mesmo modelo
        let y = new ContaBancaria();
+
+       console.log(x.consultarSaldo());
+       x.depositar(470);
+       console.log(x.consultarSaldo());
+       x.sacar(200);
+       console.log(x.consultarSaldo());
+
+
     </script>
     
 </body>
