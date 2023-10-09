@@ -75,6 +75,22 @@
         //cadeira.girarCadeira();
         cadeira2.girarCadeira();
 
+        class Sofa{
+            constructor(cor,qntd_acentos, reclinavel){
+                this.cor = cor;
+                this.qntd_acentos = qntd_acentos;
+                this.reclinavel = reclinavel;
+
+            }
+            reclinarSofa(){
+                if(this.reclinavel === true){
+                    console.log('O sofa pode ser reclinado');
+                }else{
+                    console.log('o Sofa é estatico');
+                }
+            }
+        }
+
       
 
     </script>
