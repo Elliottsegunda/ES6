@@ -15,6 +15,15 @@
             this.canalAtivo = 69;
             this.volume = 5
         }
+
+        //getters e setters
+
+        get canalAtivo(){
+            return this._canalAtivo;
+        }
+        set canalAtivo(canal){
+            this._canalAtivo = canal;
+        }
        }
        let tv = new Tv();
        console.log(tv.canalAtivo);
