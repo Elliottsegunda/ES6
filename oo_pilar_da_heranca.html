@@ -8,20 +8,23 @@
 <body>
     <script>
         /*
+        extends - usado para herdar
         
         */
 
         class Animal{
             constructor(){
                 this.cor = '';
-                this,tamanho = null;
+                this.tamanho = null;
+                this.peso = null; //inserido ultimo para manutenção
             }
             dormir(){
                 console.log('Dormir');
             }
         }
-       class Cachorro{
+       class Cachorro extends Animal{
         constructor(){
+            super();
             this.orelhas = 'Grandes e caidas';
         }
 
@@ -33,8 +36,9 @@
 
         }
        }
-       class Passaro{
+       class Passaro extends Animal{
         constructor(){
+            super();
             this.bico = 'curto';
         }
 
@@ -43,11 +47,27 @@
 
         }
        }
+       class Papagaio extends Passaro{// herdou passaro, que herdou animal
+        constructor(){
+            super();
+            this.sabeFalar = true;
+        }
+        falar(){
+            console.log('Sabe Falar');
+        }
+       }
        let cachorro = new Cachorro();
        let passaro = new Passaro();
+       let papagaio = new Papagaio();
 
        console.log(cachorro);
        console.log(passaro);
+       console.log(papagaio);
+       cachorro.dormir();
+       passaro.dormir();
+       papagaio.dormir();
+       papagaio.voar();
+       papagaio.falar();
     </script>
 </body>
 </html>
