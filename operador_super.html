@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        /*
+        o super é sempre usado no objecto filho quando um objecto pai é herdado.
+        */
+       class Animal{
+        constructor(){
+            this.cor = '';
+            this.tamanho = null;
+            this.peso = null;
+        }
+        dormir(){
+            console.log('Dormir');
+        }
+       }
+
+       class Passaro extends Animal{
+        constructor(){
+            super();
+            this.bico ='curto';
+        }
+        voar(){
+            console.log('voar');
+        }
+
+       }
+       class Papagaio extends Animal{
+        constructor(){
+            super();
+        }
+       }
+    </script>
 </body>
 </html>
