@@ -20,6 +20,16 @@
        }
        let produto = new Produto('Notebook', 1246000);
        produto.verDescricao();
+
+       let produtoLiteral = {
+        descricao: 'Geladeira',
+        preco: 200000,
+        verDescricao: function(){
+            console.log(`${this.descricao} Por apenas ${this.preco}`);
+
+        }
+
+       }
     </script>
 </body>
 </html>
