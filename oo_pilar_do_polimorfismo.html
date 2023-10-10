@@ -49,9 +49,15 @@
         enterrarCabeca(){
             console.log('Enterrar a cabeça');
         }
+
+        //polimorfismo - onde dize3mos um comportamento diferente a ser herdado.
+        voar(){
+            console.log('Não Sabe voar')
+        }
        }
        let avestruz = new Avestruz();
        avestruz.enterrarCabeca();
+       avestruz.voar();
 
        let papagaio = new Papagaio( true, 'verde', 25, 200);
        console.log(papagaio);
