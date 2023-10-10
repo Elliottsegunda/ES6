@@ -9,6 +9,7 @@
     <script>
         /*
         o super é sempre usado no objecto filho quando um objecto pai é herdado.
+        ele extend o constructor da classe pai, ou seja, se quisermos passar parametros para o objecto pai, passamos atraves do super
         */
        class Animal{
         constructor(){
@@ -32,14 +33,17 @@
 
        }
        class Papagaio extends Passaro{
-        constructor(){
+        constructor(sabeFalar){
             super();
-            this.sabeFalar = null;
+            this.sabeFalar = sabeFalar;
         }
         falar(){
             console.log('Falar');
         }
        }
+
+       let papagaio = new Papagaio( true);
+       console.log(papagaio);
     </script>
 </body>
 </html>
