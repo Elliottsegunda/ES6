@@ -9,12 +9,17 @@
     <script>
         /*
         */
-       class produto{
+       class Produto{
         constructor(descricao, preco){
             this.descricao = descricao;
             this.preco = preco;
         }
+        verDescricao(){
+            console.log(`${this.descricao} Por apenas ${this.preco}`);
+        }
        }
+       let produto = new Produto('Notebook', 1246000);
+       produto.verDescricao();
     </script>
 </body>
 </html>
