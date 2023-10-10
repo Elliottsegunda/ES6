@@ -12,7 +12,7 @@
         */
        class Animal{
         constructor(){
-            this.cor = '';
+            this.cor = null;
             this.tamanho = null;
             this.peso = null;
         }
@@ -24,17 +24,17 @@
        class Passaro extends Animal{
         constructor(){
             super();
-            this.bico ='curto';
+            this.bico =null;
         }
         voar(){
             console.log('voar');
         }
 
        }
-       class Papagaio extends Animal{
+       class Papagaio extends Passaro{
         constructor(){
             super();
-            this.sabeFalar = true;
+            this.sabeFalar = null;
         }
         falar(){
             console.log('Falar');
