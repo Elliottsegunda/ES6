@@ -12,10 +12,10 @@
         ele extend o constructor da classe pai, ou seja, se quisermos passar parametros para o objecto pai, passamos atraves do super
         */
        class Animal{
-        constructor(){
-            this.cor = null;
-            this.tamanho = null;
-            this.peso = null;
+        constructor(cor,tamanho,peso){
+            this.cor = cor;
+            this.tamanho = tamanho;
+            this.peso = peso;
         }
         dormir(){
             console.log('Dormir');
@@ -23,9 +23,9 @@
        }
 
        class Passaro extends Animal{
-        constructor(){
-            super();
-            this.bico =null;
+        constructor(bico){
+            super('azul', 30, 17);
+            this.bico =bico;
         }
         voar(){
             console.log('voar');
@@ -34,7 +34,7 @@
        }
        class Papagaio extends Passaro{
         constructor(sabeFalar){
-            super();
+            super('Medio');
             this.sabeFalar = sabeFalar;
         }
         falar(){
