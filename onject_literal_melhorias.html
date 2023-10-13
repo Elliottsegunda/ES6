@@ -6,25 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        /*
-        */
-       let nome = 'Elliott';
-       let idade = 21;
-       let sexo = 'Masculino';
-       let profissão = 'Programador';
-
-    </script>
-
     <form action="">
-        <input type="text" id="nome">
-        <input type="number" id="idade">
-        <input type="text" id="profissao">
+        <label for="">Nome: <br>
+        </label><input type="text" id="nome" placeholder="Digite o seu nome"><br>
+        <label for="">Idade: <br>
+        <input type="number" id="idade" placeholder="Digite a sua idade"><br>
+        <label for="">Profissão: <br>
+        <input type="text" id="profissao"><br>
+        <label for="">Genero: <br>
         <select name="" id="sexo">
             <option value="">-- Selecione --</option>
             <option value="Masculino">Masculino</option>
             <option value="Femenino">Femenino</option>
         </select>
     </form>
+    <script>
+        /*
+        */
+       let nome = document.getElementById('nome').value;
+       let idade = document.getElementById('idade').value;
+       let sexo = document.getElementById('sexo').value;
+       let profissao = document.getElementById('profissao').value;
+
+       console.log(nome);
+       console.log(idade);
+       console.log(profissao);
+       console.log(sexo);
+
+    </script>
+
+    
 </body>
 </html>
