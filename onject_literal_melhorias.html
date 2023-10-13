@@ -55,8 +55,15 @@
 
        let objecto = {
         nome: nome,
-        idade
+        idade: idade,
+        sexo : sexo,
+        profissao: profissao,
+        exibirResumo: function() {
+            console.log(`${this.nome}, ${this.idade} Anos, ${this.sexo}, é ${this.programador}`);
+        }
        }
+       console.log(objecto);
+       objecto.exibirResumo();
     </script>
 
     
