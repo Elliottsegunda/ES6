@@ -8,7 +8,11 @@
 <body>
     <script>
         /*
-        Supondo que criamos um objecto literal e depois usamos ele como valor de uma outra variavel
+        Supondo que criamos um objecto literal e depois usamos ele como valor de uma outra variavel.
+
+        Nesse caso a variavel y não recebe o objecto literal, mas sim uma, uma referencia de acesso ao objecto.
+
+        Nós temos um unico objecto, que está sendo referenciado por variaveis diferentes.
         */
 
         let assinatura = {
@@ -22,6 +26,13 @@
         console.log(assinatura.descricao);
 
         let y = assinatura;
+
+        console.log(y.idCliente);
+
+        y.descricao = 'CopyWriter e Formador';
+
+        console.log(assinatura.descricao);
+        console.log(y.descricao);
     </script>
 </body>
 </html>
