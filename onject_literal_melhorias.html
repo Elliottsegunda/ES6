@@ -59,11 +59,29 @@
         sexo : sexo,
         profissao: profissao,
         exibirResumo: function() {
-            console.log(`${this.nome}, ${this.idade} Anos, ${this.sexo}, é ${this.programador}`);
+            console.log(`${this.nome}, ${this.idade} Anos, ${this.sexo}, é ${this.profissao}`);
         }
        }
        console.log(objecto);
        objecto.exibirResumo();
+
+       /*
+       Melhorias no objecto literal ES6
+
+       Nos casos em que a nossa variavel tem o mesmo nome que o nosso par valor, nós podemos omitir a definição do nome desse par
+       */
+
+       let objecto2 = {
+        nome, //nome do par valor = nome da variavel / valor do par valor = valor da variavel
+        idade,
+        sexo,
+        profissao,
+        exibirResumo: function() {
+            console.log(`${this.nome}, ${this.idade} Anos, ${this.sexo}, é ${this.profissao}`);
+        }
+       }
+       console.log(objecto);
+       objecto2.exibirResumo();
     </script>
 
     
