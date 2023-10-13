@@ -20,20 +20,23 @@
             <option value="Femenino">Femenino</option>
         </select>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" onclick="pegarValor()">
     </form>
     <script>
         /*
         */
-       let nome = document.getElementById('nome').value;
-       let idade = document.getElementById('idade').value;
-       let sexo = document.getElementById('sexo').value;
-       let profissao = document.getElementById('profissao').value;
+       function pegarValor(){
+        let nome = document.getElementById('nome').value;
+        let idade = document.getElementById('idade').value;
+        let sexo = document.getElementById('sexo').value;
+        let profissao = document.getElementById('profissao').value;
 
-       console.log(nome);
-       console.log(idade);
-       console.log(profissao);
-       console.log(sexo);
+        console.log(nome);
+        console.log(idade);
+        console.log(profissao);
+        console.log(sexo);
+       }
+       
 
     </script>
 
