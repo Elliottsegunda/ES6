@@ -20,7 +20,8 @@
         this.velocidadeMaxima = 180;
 
         this.acelerar = function(){
-            this.velocidadeAtual +=10;
+            let velocidade = this.getvelocidadeAtual() +10;
+            this.setVelocidadeAtual(velocidade);
         }
 
         this.getVelocidadeAtual = function(){
