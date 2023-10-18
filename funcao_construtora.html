@@ -11,7 +11,7 @@
         trata-se de uma função que possui um determinado escopo e que em determinado momento ela vai ser recuperda usando o operador new, ou seja, elá será construida de facto, sendo convertida paera um objecto.
         diferente da classe não usaremos o constructor(), porque não se trata de uma notação baseada em classe e sim de uma função que vai ser construida apartir do operador new
 
-        Os metodos são definidos com o operador this, na verdade nós definimos um atributo que armazena uma função.
+        Os metodos são definidos com o operador this, na verdade nós definimos um atributo que armazena uma função.e apartir da chamada do atributo nós executamos a função.
         */
        let Carro = function (){
         this.cor = 'Amarelo';
@@ -19,7 +19,16 @@
         this.velocidadeAtual = 0;
         this.velocidadeMaxima = 180;
 
-        this.acelerar = function(){}
+        this.acelerar = function(){
+            this.velocidadeAtual +=10;
+        }
+
+        this.getVelocidadeAtual = function(){
+            return this.velocidadeAtual;
+        }
+        this.setVelocidadeAtual = function (velocidadeAtual){
+            this.velocidadeAtual = velocidadeAtual;
+        }
        }
        let carro = new Carro();
 
