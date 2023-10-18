@@ -56,6 +56,7 @@
 
        let Carro2 = function (){
         var velocidadeMaxima = 180;
+        var quilometrosrodados = 0
         this.cor = 'Amarelo';
         this.modelo = 'Chevette';
         this.velocidadeAtual = 0;
@@ -67,6 +68,8 @@
                 velocidade = velocidadeMaxima;
             }
             this.setVelocidadeAtual(velocidade);
+
+            quilometrosrodados +=0.05;
         }
 
         this.getVelocidadeAtual = function(){
